@@ -15,6 +15,9 @@ app.get('/', (req, res) => {
 
             res.end(`API Datas -> Posts: ${JSON.stringify(response.data)}`)
         })
+        .catch((error) => {
+            console.error('Erro ao acessar a API: ', error)
+        })
 })
 
 //rota de post único baseado no id
@@ -30,6 +33,9 @@ app.get('/posts/:id', (req, res) => {
 
             res.end(`API Datas -> Post ${id}: ${JSON.stringify(response.data)}`)
         })
+        .catch((error) => {
+            console.error('Erro ao acessar a API: ', error)
+        })
 })
 
 //rota de comments
@@ -42,6 +48,9 @@ app.get('/comments', (req, res) => {
             res.writeHead(200, {'Content-Type': 'text/plain'})
 
             res.end(`API Datas -> Comments: ${JSON.stringify(response.data)}`)
+        })
+        .catch((error) => {
+            console.error('Erro ao acessar a API: ', error)
         })
 })
 
@@ -58,6 +67,9 @@ app.get('/comments/postId/:id', (req, res) => {
 
             res.end(`API Datas -> Comment ${id}: ${JSON.stringify(response.data)}`)
         })
+        .catch((error) => {
+            console.error('Erro ao acessar a API: ', error)
+        })
 })
 
 //rota de albums
@@ -70,6 +82,9 @@ app.get('/albums', (req, res) => {
             res.writeHead(200, {'Content-Type': 'text/plain'})
 
             res.end(`API Datas -> Albums: ${JSON.stringify(response.data)}`)
+        })
+        .catch((error) => {
+            console.error('Erro ao acessar a API: ', error)
         })
 })
 
@@ -86,6 +101,9 @@ app.get('/albums/:id', (req, res) => {
 
             res.end(`API Datas -> Album ${id}: ${JSON.stringify(response.data)}`)
         })
+        .catch((error) => {
+            console.error('Erro ao acessar a API: ', error)
+        })
 })
 
 //rota de photos
@@ -98,6 +116,9 @@ app.get('/photos', (req, res) => {
             res.writeHead(200, {'Content-Type': 'text/plain'})
 
             res.end(`API Datas -> Photos: ${JSON.stringify(response.data)}`)
+        })
+        .catch((error) => {
+            console.error('Erro ao acessar a API: ', error)
         })
 })
 
@@ -114,6 +135,9 @@ app.get('/photos/:id', (req, res) => {
 
             res.end(`API Datas -> Photo ${id}: ${JSON.stringify(response.data)}`)
         })
+        .catch((error) => {
+            console.error('Erro ao acessar a API: ', error)
+        })
 })
 
 //rota de todos
@@ -126,6 +150,9 @@ app.get('/todos', (req, res) => {
             res.writeHead(200, {'Content-Type': 'text/plain'})
 
             res.end(`API Datas -> Todos: ${JSON.stringify(response.data)}`)
+        })
+        .catch((error) => {
+            console.error('Erro ao acessar a API: ', error)
         })
 })
 
@@ -142,6 +169,9 @@ app.get('/todos/:id', (req, res) => {
 
             res.end(`API Datas -> Todo ${id}: ${JSON.stringify(response.data)}`)
         })
+        .catch((error) => {
+            console.error('Erro ao acessar a API: ', error)
+        })
 })
 
 //rota de users
@@ -154,6 +184,9 @@ app.get('/users', (req, res) => {
             res.writeHead(200, {'Content-Type': 'text/plain'})
 
             res.end(`API Datas -> Users: ${JSON.stringify(response.data)}`)
+        })
+        .catch((error) => {
+            console.error('Erro ao acessar a API: ', error)
         })
 })
 
@@ -169,6 +202,9 @@ app.get('/users/:id', (req, res) => {
             res.writeHead(200, {'Content-Type': 'text/plain'})
 
             res.end(`API Datas -> User ${id}: ${JSON.stringify(response.data)}`)
+        })
+        .catch((error) => {
+            console.error('Erro ao acessar a API: ', error)
         })
 })
 

@@ -5,7 +5,7 @@ const axios = require('axios');
 //função para lidar com as requisições
 const requestMain = (req, res) => {
     //URL da API que iremos acessar
-    const apiUrl = 'https://js  onplaceholder.typicode.com/posts/1'
+    const apiUrl = 'https://jsonplaceholder.typicode.com/posts/1'
 
     //fazendo uma requisição HTTP GET com API
     axios.get(apiUrl)
